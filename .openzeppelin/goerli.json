@@ -1,0 +1,399 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xBA1782CDeA3493296cF652C00e7af4271fC73D1d",
+      "txHash": "0xa3234f531ffd72bbfb450e193da209d54c641ad3fdb7b26c04645fd51588aed4",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "f30e18c62f384d21da583ec5d13883f3755c4152e4fb3d59f1c89b00af8dcdac": {
+      "address": "0xa0166E4eCa092225Fc5B755A9af21f21e3FdC00b",
+      "txHash": "0x8698e8101127f4702a62d248049adf30478c3dfe574abca343e6ddf59d864592",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "_HASHED_NAME",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_bytes32",
+            "contract": "EIP712Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/cryptography/draft-EIP712Upgradeable.sol:32"
+          },
+          {
+            "label": "_HASHED_VERSION",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_bytes32",
+            "contract": "EIP712Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/cryptography/draft-EIP712Upgradeable.sol:33"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "EIP712Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/cryptography/draft-EIP712Upgradeable.sol:120"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "sodiumWalletFactory",
+            "offset": 0,
+            "slot": "303",
+            "type": "t_contract(ISodiumWalletFactory)10127",
+            "contract": "SodiumCore",
+            "src": "contracts/SodiumCore.sol:43"
+          },
+          {
+            "label": "sodiumTreasury",
+            "offset": 0,
+            "slot": "304",
+            "type": "t_address_payable",
+            "contract": "SodiumCore",
+            "src": "contracts/SodiumCore.sol:51"
+          },
+          {
+            "label": "metaContributionValidator",
+            "offset": 0,
+            "slot": "305",
+            "type": "t_address",
+            "contract": "SodiumCore",
+            "src": "contracts/SodiumCore.sol:54"
+          },
+          {
+            "label": "feeNumerator",
+            "offset": 0,
+            "slot": "306",
+            "type": "t_uint256",
+            "contract": "SodiumCore",
+            "src": "contracts/SodiumCore.sol:59"
+          },
+          {
+            "label": "feeDenominator",
+            "offset": 0,
+            "slot": "307",
+            "type": "t_uint256",
+            "contract": "SodiumCore",
+            "src": "contracts/SodiumCore.sol:60"
+          },
+          {
+            "label": "auctionLength",
+            "offset": 0,
+            "slot": "308",
+            "type": "t_uint256",
+            "contract": "SodiumCore",
+            "src": "contracts/SodiumCore.sol:63"
+          },
+          {
+            "label": "wallets",
+            "offset": 0,
+            "slot": "309",
+            "type": "t_mapping(t_address,t_address)",
+            "contract": "SodiumCore",
+            "src": "contracts/SodiumCore.sol:68"
+          },
+          {
+            "label": "loans",
+            "offset": 0,
+            "slot": "310",
+            "type": "t_mapping(t_uint256,t_struct(Loan)10365_storage)",
+            "contract": "SodiumCore",
+            "src": "contracts/SodiumCore.sol:71"
+          },
+          {
+            "label": "auctions",
+            "offset": 0,
+            "slot": "311",
+            "type": "t_mapping(t_uint256,t_struct(Auction)10387_storage)",
+            "contract": "SodiumCore",
+            "src": "contracts/SodiumCore.sol:74"
+          },
+          {
+            "label": "nonces",
+            "offset": 0,
+            "slot": "312",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_uint256))",
+            "contract": "SodiumCore",
+            "src": "contracts/SodiumCore.sol:79"
+          },
+          {
+            "label": "ERC1155Nonce",
+            "offset": 0,
+            "slot": "313",
+            "type": "t_uint256",
+            "contract": "SodiumCore",
+            "src": "contracts/SodiumCore.sol:82"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(ISodiumWalletFactory)10127": {
+            "label": "contract ISodiumWalletFactory",
+            "numberOfBytes": "20"
+          },
+          "t_enum(Collateral)10329": {
+            "label": "enum Types.Collateral",
+            "members": [
+              "ERC721",
+              "ERC1155"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_address)": {
+            "label": "mapping(address => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(uint256 => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Auction)10387_storage)": {
+            "label": "mapping(uint256 => struct Types.Auction)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Loan)10365_storage)": {
+            "label": "mapping(uint256 => struct Types.Loan)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Auction)10387_storage": {
+            "label": "struct Types.Auction",
+            "members": [
+              {
+                "label": "bidder",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "rawBid",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "effectiveBid",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(Loan)10365_storage": {
+            "label": "struct Types.Loan",
+            "members": [
+              {
+                "label": "length",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "end",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "auctionEnd",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "liquidity",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "lenders",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "principals",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "APRs",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "timestamps",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "tokenAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "currency",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "borrower",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "wallet",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "12"
+              },
+              {
+                "label": "repayment",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "13"
+              },
+              {
+                "label": "collateralType",
+                "type": "t_enum(Collateral)10329",
+                "offset": 0,
+                "slot": "14"
+              }
+            ],
+            "numberOfBytes": "480"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
